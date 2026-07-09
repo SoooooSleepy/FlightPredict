@@ -11,15 +11,13 @@ namespace BlazorApp4
     {
         private readonly string _filePath;
 
-        // Внедряем окружение через Dependency Injection
         public PredictService(IWebHostEnvironment env)
         {
-            // Собираем путь к wwwroot/flights.csv
             _filePath = Path.Combine(env.WebRootPath, "flights.csv");
         }
         public ObservableCollection<FlightListItem> GetFlightsLists()
         {
-            if (!System.IO.File.Exists(_filePath)) // Добавьте System.IO. перед File
+            if (!System.IO.File.Exists(_filePath)) 
             {
                 return new ObservableCollection<FlightListItem>();
             }
@@ -107,7 +105,7 @@ namespace BlazorApp4
                 string missingCity = !originExists ? origin : destination;
                 return (0, $"Ошибка: Город '{missingCity}' не найден в системе.");
             }
-            // ПРОВЕРКА 2: Что пришло на вход и что есть в первой строке базы?
+           
             var firstFlight = allFlights.First();
             Debug.WriteLine($"Ищем: '{origin}'->'{destination}'. В базе первый рейс: '{firstFlight.Original}'->'{firstFlight.Destination}'. ");
 
@@ -127,18 +125,15 @@ namespace BlazorApp4
 
             if (routeData.Any())
             {
-                // Если маршрут есть, берем медианную цену (она точнее среднего)
+                // Если маршрут есть, берем медианную цену
                 basePrice = routeData.OrderBy(f => f.Price).ElementAt(routeData.Count / 2).Price;
             }
             else
             {
-                // --- ГЛУБОКАЯ ЛОГИКА ПРОГНОЗИРОВАНИЯ (Маршрут-призрак) ---
+                // --- "ЭВРИСТИЧЕСКИЙ АНАЛИЗ ---
                 methodNote = "(Интеллектуальный прогноз) ";
 
                 // 1. Уточняем дистанцию (Геометрический поиск)
-                // Ищем дистанцию в базе: сначала рейсы из А в любые города, потом в Б из любых. 
-                // Если находим оба, берем среднее между "плечами", если один - берем его.
-                var distFromOrigin = allFlights
                     .Where(f => f.Original.Trim().Equals(origin.Trim(), StringComparison.OrdinalIgnoreCase))
                     .Select(f => (long?)f.Distance).FirstOrDefault();
 
@@ -149,8 +144,6 @@ namespace BlazorApp4
                 long estimatedDistance = (distFromOrigin ?? distToDest ?? 1200); // 1200 - среднее по миру, если совсем пусто
 
                 // 2. Рассчитываем "Рыночную стоимость километра" (Yield Management)
-                // Мы не просто берем среднее, а смотрим, сколько стоят билеты из ЭТОГО города вылета
-                // так как в разных аэропортах разные сборы и налоги.
                 var originStats = allFlights
                  .Where(f => f.Original.Trim().Equals(origin.Trim(), StringComparison.OrdinalIgnoreCase) &&
                              (string.IsNullOrWhiteSpace(requestedClass) ||
@@ -160,12 +153,10 @@ namespace BlazorApp4
                 decimal pricePerKm;
                 if (originStats.Any())
                 {
-                    // Считаем стоимость км именно для этого аэропорта вылета
                     pricePerKm = originStats.Average(f => f.Price / (f.Distance > 0 ? f.Distance : 1));
                 }
                 else
                 {
-                    // Если город вылета совсем новый, берем среднее по всей базе, но отсекаем 10% самых дорогих и дешевых (квартили)
                     var sortedPpK = allFlights
                         .Select(f => f.Price / (f.Distance > 0 ? f.Distance : 1))
                         .OrderBy(x => x)
@@ -176,7 +167,6 @@ namespace BlazorApp4
                 }
 
                 // 3. Фактор авиакомпании (Престижность)
-                // Если в базе есть доминирующая компания для этого региона, применяем её средний коэффициент
                 var regionalAirlines = allFlights
                   .Where(f => f.Original.Trim().Equals(origin.Trim(), StringComparison.OrdinalIgnoreCase) &&
                               (string.IsNullOrWhiteSpace(requestedClass) ||
@@ -188,11 +178,8 @@ namespace BlazorApp4
                 decimal airlineFactor = 1.0m;
                 if (regionalAirlines != null)
                 {
-                    // Сравниваем среднюю цену этой авиакомпании с общим рынком
                     decimal airlineAvg = regionalAirlines.Average(f => f.Price / (f.Distance > 0 ? f.Distance : 1));
                     airlineFactor = airlineAvg / (pricePerKm > 0 ? pricePerKm : 1);
-
-                    // Ограничиваем влияние авиакомпании, чтобы не было диких перекосов
                     airlineFactor = Math.Clamp(airlineFactor, 0.8m, 1.4m);
                 }
 
@@ -219,7 +206,6 @@ namespace BlazorApp4
             decimal predictedPrice = Math.Round(basePrice * seasonality * dayFactor * bookingFactor, 2);
 
             // 4. Формируем умный совет
-            // Сравниваем предсказание с "нормальной" ценой (без учета срочности и сезона)
             decimal priceDiffRatio = predictedPrice / basePrice;
 
             string advice = priceDiffRatio switch
