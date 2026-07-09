@@ -1,0 +1,164 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\predictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:predictservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\components\\pages\\notfound.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:components\\pages\\notfound.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\components\\pages\\politic.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:components\\pages\\politic.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|c:\\users\\isol045\\source\\repos\\blazorapp4\\wwwroot\\logog.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{9B6D717A-A981-B461-4CDC-0995C7BE35FB}|BlazorApp4.csproj|solutionrelative:wwwroot\\logog.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotFound.razor",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Pages\\NotFound.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\NotFound.razor",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Pages\\NotFound.razor",
+              "RelativeToolTip": "Components\\Pages\\NotFound.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T23:19:41.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Politic.razor",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Pages\\Politic.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Politic.razor",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Pages\\Politic.razor",
+              "RelativeToolTip": "Components\\Pages\\Politic.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T23:17:24.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "logog.jpg",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\wwwroot\\logog.jpg",
+              "RelativeDocumentMoniker": "wwwroot\\logog.jpg",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\wwwroot\\logog.jpg",
+              "RelativeToolTip": "wwwroot\\logog.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2026-03-13T22:22:38.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T13:54:33.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T13:54:06.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T13:10:18.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PredictService.cs",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\PredictService.cs",
+              "RelativeDocumentMoniker": "PredictService.cs",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\PredictService.cs",
+              "RelativeToolTip": "PredictService.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAmwOgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T13:08:26.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\IsoL045\\source\\repos\\BlazorApp4\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-13T13:07:22.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

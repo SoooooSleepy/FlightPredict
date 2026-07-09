@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YLPr7r+NXSw=",
+  "success": true,
+  "projectFilePath": "/home/sosleepy/Загрузки/флеш/юэкап/BlazorApp4/BlazorApp4.csproj",
+  "expectedPackageFiles": [
+    "/home/sosleepy/.nuget/packages/csvhelper/33.1.0/csvhelper.33.1.0.nupkg.sha512",
+    "/home/sosleepy/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.9/microsoft.aspnetcore.app.internal.assets.10.0.9.nupkg.sha512",
+    "/home/sosleepy/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.9/microsoft.aspnetcore.app.ref.10.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}

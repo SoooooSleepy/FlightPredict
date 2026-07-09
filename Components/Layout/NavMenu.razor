@@ -1,0 +1,33 @@
+﻿
+
+<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+<div class="top-row navbar navbar-dark ps-1 pt-0" style="height: auto; border: none; min-height: 0;">
+    <div class="container-fluid p-0">
+        <a class="navbar-brand p-0 m-0" href="/">
+            <img src="/logog.jpg"
+                 width="240"
+                 height="240"
+                 class="rounded-3"
+                 style="display: block;"
+                 alt="Logo">
+        </a>
+    </div>
+</div>
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+    <nav class="nav flex-column">
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Главная страница
+            </NavLink>
+        </div>
+
+
+        <div class="nav-item px-3">
+            <NavLink class="nav-link lh-sm py-1" href="politic">
+                Политика конфиденциальности
+            </NavLink>
+        </div>
+    </nav>
+</div>
+

@@ -1,0 +1,30 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page d-flex flex-column" style="height: 100vh;">
+    @* 1. Хедер на всю ширину сверху *@
+    <header class="navbar navbar-dark d-flex align-items-center justify-content-center"
+            style="height: 80px; width: 100%; background: linear-gradient(135deg, #1a0033 0%, #301974 30%, #001bff 70%, #00a8e8 100%); flex-shrink: 0; z-index: 1000;">
+        <p class="m-0 fw-light text-white text-uppercase" style="font-size: 2rem; letter-spacing: 0.4rem;">
+            Flight<span class="fw-bold">Predict</span>
+        </p>
+    </header>
+
+    @* 2. Контейнер для Сайдбара и Контента (теперь они под хедером) *@
+    <div class="d-flex flex-row flex-grow-1" style="overflow: hidden;">
+        <div class="sidebar" style="width: 250px; flex-shrink: 0;">
+            <NavMenu />
+        </div>
+
+        <main class="flex-grow-1" style="overflow-y: auto; background-color: #f8f9fa;">
+            <article class="content px-4 py-3">
+                @Body
+            </article>
+        </main>
+    </div>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
