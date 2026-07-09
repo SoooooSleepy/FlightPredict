@@ -2,9 +2,6 @@
 Был разработан для тренировки создания алгоритмов прогнозирования с привязкой к набору данных и также как первая практика в создании сайтов на ASP.NET Core.
 Основная часть работы была проведена над алгоритмом прогнозирования представленном далее:
 
-**Formatting Code for README**
-
-The user wants to format code for their README in Git. I should explain how to wrap code in markdown using triple backticks, specifically for C#. Their code has some errors, like a missing assignment before the `.Where(...)` method and an undefined `distFromOrigin` variable. However, since they just need to insert the code, I'll keep it as-is but explain wrapping it correctly. I'll instruct them to replace Python's `'''` markers with ```csharp. Then, I'll provide the final markdown snippet.Вставьте в README так (Markdown):
 
 ```csharp
 c#
